@@ -13,3 +13,4 @@ variable "tags" {
     description = "Tags for the resource group"
     type = map(string)
 }
+
