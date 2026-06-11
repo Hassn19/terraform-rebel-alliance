@@ -25,10 +25,10 @@ module "resource_group" {
 module "network" {
   source = "./modules/network"
 
-  vnet_name = var.vnet_name
-  location = module.resource_group.location
+  vnet_name           = var.vnet_name
+  location            = module.resource_group.location
   resource_group_name = module.resource_group.name
-  address_space = var.address_space
-  subnets = var.subnets
-  tags = var.tags
+  address_space       = var.address_space
+  subnets             = var.subnets
+  tags                = var.tags
 }

@@ -15,15 +15,15 @@ variable "tags" {
 
 variable "vnet_name" {
   description = "Name of the Azure virtual network"
-  type = string
+  type        = string
 }
 
 variable "address_space" {
   description = "Address space for the VNet"
-  type = list(string)
+  type        = list(string)
 }
 
 variable "subnets" {
-  description = "Subets for the 3-tier architecture"
-  type = map(string)
+  description = "Subnets for the 3-tier architecture"
+  type        = map(string)
 }

@@ -8,7 +8,7 @@ output "vnet_id" {
 
 output "subnet_ids" {
   value = {
-    for subnet_name, subnet in azurerm_subnet.azurerm_subnet.this:
+    for subnet_name, subnet in azurerm_subnet.this :
     subnet_name => subnet.id
   }
 }
